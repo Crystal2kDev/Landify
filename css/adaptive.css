@@ -1,0 +1,168 @@
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    .second-title {
+        font-size: 36px;
+        max-width: auto !important;
+    }
+
+    .main-title {
+        font-size: 48px;
+        max-width: auto !important;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header-nav {
+        position: fixed;
+        right: 0;
+        top: 80px;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+        height: calc(100vh - 80px);
+        width: 30vw;
+        transform: translateX(100%);
+        transition: transform .3s ease-in-out;
+        overflow-y: auto;
+    }
+
+    .header-nav__active {
+        transform: none;
+    }
+
+    .nav-list {
+        padding: 30px 20px 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-title {
+        max-width: max-content;
+    }
+    
+    .main-subtitle {
+        max-width: max-content;
+    }
+
+    .main-img {
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-footer-list {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+
+    .features-list {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .achievements-text {
+        max-width: max-content !important;
+        padding-bottom: 48px;
+    }
+
+    .achievements-block:first-child {
+        flex-wrap: wrap;
+    }
+
+    .app-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .app-title {
+        max-width: max-content !important;
+    }
+    .app-description {
+        max-width: max-content !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .achievements-block:last-child {
+        flex-wrap: wrap;
+    }
+
+    .achievements-img > img {
+        max-width: auto;
+    }
+
+    .main-footer-list {
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-buttons {
+        display: none;
+    }
+    
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+    }
+    
+    .features-list {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .feature-item-subtitle {
+        padding-top: 10px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .achievements-list {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .achievements-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .second-title {
+        font-size: 30px;
+        max-width: auto !important;
+    }
+
+    .main-title {
+        font-size: 36px;
+        max-width: auto !important;
+    }
+
+    .main-footer-list {
+        grid-template-columns: auto auto;
+        padding: 20px 30px;
+    }
+}

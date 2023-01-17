@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Landify</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="logo">
+                    <svg width="128" height="32" viewBox="0 0 128 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2460_7116)">
+                        <g clip-path="url(#clip1_2460_7116)">
+                        <path d="M0.657532 32H11.5068C16.6514 32 20.8219 27.8295 20.8219 22.6849H9.9726C4.82803 22.6849 0.657532 26.8554 0.657532 32Z" fill="#F22BB2"/>
+                        <path d="M1.14288 9.31507V23.0137C6.28745 23.0137 10.458 18.8432 10.458 13.6986V0C5.31338 0 1.14288 4.1705 1.14288 9.31507Z" fill="#8C30F5"/>
+                        <path d="M31.3425 0H20.4932C15.3486 0 11.1781 4.1705 11.1781 9.31507H22.0274C27.172 9.31507 31.3425 5.14457 31.3425 0Z" fill="#FE9A22"/>
+                        <path d="M31.3425 22.137V8.43835C26.1979 8.43835 22.0274 12.6089 22.0274 17.7534V31.4521C27.172 31.4521 31.3425 27.2816 31.3425 22.137Z" fill="#2EC5CE"/>
+                        </g>
+                        <path d="M46.1714 20.48V7.99999H42.5143V24H51.8857V20.48H46.1714Z" fill="black"/>
+                        <path d="M61.5677 12.5714V13.6457C60.8134 12.7771 59.6934 12.2514 58.162 12.2514C55.1677 12.2514 52.6991 14.88 52.6991 18.2857C52.6991 21.6914 55.1677 24.32 58.162 24.32C59.6934 24.32 60.8134 23.7943 61.5677 22.9257V24H64.9962V12.5714H61.5677ZM58.8477 21.0743C57.2705 21.0743 56.1277 20 56.1277 18.2857C56.1277 16.5714 57.2705 15.4971 58.8477 15.4971C60.4248 15.4971 61.5677 16.5714 61.5677 18.2857C61.5677 20 60.4248 21.0743 58.8477 21.0743Z" fill="black"/>
+                        <path d="M74.2087 12.2514C72.7002 12.2514 71.5573 12.8 70.9402 13.6457V12.5714H67.5116V24H70.9402V17.76C70.9402 16.1371 71.8087 15.4057 73.0659 15.4057C74.163 15.4057 75.0545 16.0686 75.0545 17.4857V24H78.483V16.9828C78.483 13.8971 76.5173 12.2514 74.2087 12.2514Z" fill="black"/>
+                        <path d="M89.1346 7.99999V13.6457C88.3803 12.7771 87.2603 12.2514 85.7289 12.2514C82.7346 12.2514 80.2661 14.88 80.2661 18.2857C80.2661 21.6914 82.7346 24.32 85.7289 24.32C87.2603 24.32 88.3803 23.7943 89.1346 22.9257V24H92.5632V7.99999H89.1346ZM86.4146 21.0743C84.8375 21.0743 83.6946 20 83.6946 18.2857C83.6946 16.5714 84.8375 15.4971 86.4146 15.4971C87.9918 15.4971 89.1346 16.5714 89.1346 18.2857C89.1346 20 87.9918 21.0743 86.4146 21.0743Z" fill="black"/>
+                        <path d="M96.7928 11.5657C97.9128 11.5657 98.85 10.6286 98.85 9.50856C98.85 8.38856 97.9128 7.45142 96.7928 7.45142C95.6728 7.45142 94.7357 8.38856 94.7357 9.50856C94.7357 10.6286 95.6728 11.5657 96.7928 11.5657ZM95.0786 24H98.5071V12.5714H95.0786V24Z" fill="black"/>
+                        <path d="M107.302 10.9714V7.67999C103.507 7.45142 101.747 9.37142 101.747 12.5714H100.216V15.8628H101.747V24H105.176V15.8628H107.302V12.5714H105.176C105.176 11.2457 106.022 10.8571 107.302 10.9714Z" fill="black"/>
+                        <path d="M116.207 12.5714L114.059 19.5657L111.521 12.5714H107.75L112.299 23.4743C111.796 24.8686 111.041 25.3714 109.441 25.3714V28.5714C112.641 28.7314 114.676 27.2914 115.956 23.6571L119.864 12.5714H116.207Z" fill="black"/>
+                        <path d="M123.168 4.80005H120.078V5.59205H121.206V9.00005H122.034V5.59205H123.168V4.80005Z" fill="black"/>
+                        <path d="M127.74 4.80005H126.888L125.688 6.78605L124.482 4.80005H123.63V9.00005H124.458V6.28205L125.64 8.22605H125.736L126.918 6.27605V9.00005H127.74V4.80005Z" fill="black"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2460_7116">
+                        <rect width="128" height="32" fill="white"/>
+                        </clipPath>
+                        <clipPath id="clip1_2460_7116">
+                        <rect width="32" height="32" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+    
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-buttons">
+                    <a href="#" class="google-play">
+                        <img src="./img/header/GooglePlay.png" alt="GooglePlay">
+                    </a>
+                    <a href="#" class="app-store">
+                        <img src="./img/header/AppStore.png" alt="AppStore">
+                    </a>
+                </div>
+
+                <button class="burger-menu">
+                    <span class="burger-menu__line"></span>
+                </button>
+            </header>
+            <section class="main">
+                <div class="main-content">
+                    <h1 class="main-title">The easiest way to manage projects</h1>
+                    <p class="main-subtitle">From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done.</p>
+                    <div class="main-buttons">
+                        <a href="#" class="get-started-link">Get Started</a>
+                        <a href="#" class="watch-video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 8L16 12L10 16V8Z" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Watch Video</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-img">
+                    <img src="./img/main/MobilePhone.png" alt="Phone Layout">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="main-footer">
+            <ul class="main-footer-list">
+                <li class="main-footer-item"><img src="./img/main/airbnbLogo.png" alt="Airbnb"></li>
+                <li class="main-footer-item"><img src="./img/main/hubSpotLogo.png" alt="HubSpot"></li>
+                <li class="main-footer-item"><img src="./img/main/googleLogo.png" alt="Google"></li>
+                <li class="main-footer-item"><img src="./img/main/microsoftLogo.png" alt="Microsoft"></li>
+                <li class="main-footer-item"><img src="./img/main/walmartLogo.png" alt="Walmart"></li>
+                <li class="main-footer-item"><img src="./img/main/fedExLogo.png" alt="FedEx"></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="container">
+        <section class="features">
+            <h2 class="features-title second-title">Tailor-made features</h2>
+            <p class="features-subtitle">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <img src="./img/features/01.png" alt="Robust Workflow">
+                    <h3 class="feature-item-title">Robust workflow</h3>
+                    <p class="feature-item-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, suscipit?</p>
+                </li>
+                <li class="feature-item">
+                    <img src="./img/features/02.png" alt="Flexibility">
+                    <h3 class="feature-item-title">Flexibility</h3>
+                    <p class="feature-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, repellendus.</p>
+                </li>
+                <li class="feature-item">
+                    <img src="./img/features/03.png" alt="User Friendly">
+                    <h3 class="feature-item-title">User friendly</h3>
+                    <p class="feature-item-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, deserunt.</p>
+                </li>
+                <li class="feature-item">
+                    <img src="./img/features/04.png" alt="Multiple Layouts">
+                    <h3 class="feature-item-title">Multiple layouts</h3>
+                    <p class="feature-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, eius!</p>
+                </li>
+                <li class="feature-item">
+                    <img src="./img/features/05.png" alt="Better Components">
+                    <h3 class="feature-item-title">Better components</h3>
+                    <p class="feature-item-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laborum.</p>
+                </li>
+                <li class="feature-item">
+                    <img src="./img/features/06.png" alt="Well Organised">
+                    <h3 class="feature-item-title">Well organised</h3>
+                    <p class="feature-item-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, optio?</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <section class="stories">
+            <div class="container">
+                <h2 class="stories-title second-title">Real Stories from Real Customers</h2>
+                <p class="stories-subtitle">Get inspired by these stories.</p>
+                <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/main/airbnbLogo.png" alt="Airbnb">
+                        <p class="stories-item-quote">I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it.</p>
+                        <span class="stories-item-footer">
+                            <h4 class="stories-item-author">Jane Cooper</h4>
+                            <p class="stories-item-description">CEO, Airbnb</p>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/main/hubSpotLogo.png" alt="HubSpot">
+                        <p class="stories-item-quote">To quickly start my startup landing page design, I was looking for a landing page UI Kit. Landify is one of the best landing page UI kit I have come across. It’s so flexible, well organised and easily editable.</p>
+                        <span class="stories-item-footer">
+                            <h4 class="stories-item-author">Floyd Miles</h4>
+                            <p class="stories-item-description">Vice President, GoPro</p>
+                        </span>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/main/strapi-logo.png" alt="Strapi">
+                        <p class="stories-item-quote">Landify saved our time in designing my company page.</p>
+                        <span class="stories-item-footer">
+                            <h4 class="stories-item-author">Kristin Watson</h4>
+                            <p class="stories-item-description">Co-Founder, Strapi</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+            </div>
+    </section>
+    <div class="container">
+        <section class="achievements">
+            <div class="achievements-block">
+                <div class="achievements-text">
+                    <h2 class="achievements-title second-title">Our 18 years of achievements</h2>
+                    <p class="achievements-description">With our super powers we have reached this</p>
+                </div>
+                <div class="achievements-content">
+                    <ul class="achievements-list">
+                        <li class="achievements-item">
+                            <div>
+                                <img src="./img/features/01.png" alt="Downloads">
+                            </div>
+                            <div class="achievements-item-text-block">
+                                <h3 class="achievements-item-title">10,000+</h3>
+                                <p class="achievements-item-description">Downloads per day</p>
+                            </div>
+                        </li>
+                        <li class="achievements-item">
+                            <div>
+                                <img src="./img/features/04.png" alt="Users">
+                            </div>
+                            <div class="achievements-item-text-block">
+                                <h3 class="achievements-item-title">2 Million</h3>
+                                <p class="achievements-item-description">Users</p>
+                            </div>
+                        </li>
+                        <li class="achievements-item">
+                            <div>
+                                <img src="./img/features/05.png" alt="Clients">
+                            </div>
+                            <div class="achievements-item-text-block">
+                                <h3 class="achievements-item-title">500+</h3>
+                                <p class="achievements-item-description">Clients</p>
+                            </div>
+                        </li>
+                        <li class="achievements-item">
+                            <div>
+                                <img src="./img/features/06.png" alt="Countries">
+                            </div>
+                            <div class="achievements-item-text-block">   
+                                <h3 class="achievements-item-title">140</h3>
+                                <p class="achievements-item-description">Countries</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="achievements-block">
+                <div class="achievements-text">
+                    <h2 class="achievements-title second-achievements second-title">Easy integrations with 170+ tools</h2>
+                    <p class="achievements-description second-achievements">Connect Landify with your favourite tools that you use daily and keep things on track.</p>
+                </div>
+                <div class="achievements-img">
+                    <img src="./img/achievements/Logos.png" alt="Logos">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="app">
+        <div class="container">
+            <div class="app-body">
+                <div class="app-content">
+                    <h2 class="app-title second-title">Manage all projects from your mobile</h2>
+                    <p class="app-description">Download the app to manage your projects, keep track of the progress and complete tasks without procastinating. Stay on track and complete on time!</p>
+                    <h4 class="app-subtitle">Get the App</h4>
+                    <div class="app-buttons">
+                        <a href="#" class="google-play">
+                            <img src="./img/header/GooglePlay.png" alt="GooglePlay">
+                        </a>
+                        <a href="#" class="app-store">
+                            <img src="./img/header/AppStore.png" alt="AppStore">
+                        </a>
+                    </div>
+                </div>
+                <div class="app-img">
+                    <img src="./img/app/Phones.png" alt="Phones">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-content">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2486_10358)">
+                        <path d="M0.657532 31.9999H11.5068C16.6514 31.9999 20.8219 27.8294 20.8219 22.6848H9.9726C4.82803 22.6848 0.657532 26.8553 0.657532 31.9999Z" fill="#F22BB2"/>
+                        <path d="M1.14288 9.31507V23.0137C6.28745 23.0137 10.458 18.8432 10.458 13.6986V0C5.31338 0 1.14288 4.1705 1.14288 9.31507Z" fill="#8C30F5"/>
+                        <path d="M31.3425 0H20.4932C15.3486 0 11.1781 4.1705 11.1781 9.31507H22.0274C27.172 9.31507 31.3425 5.14457 31.3425 0Z" fill="#FE9A22"/>
+                        <path d="M31.3425 22.1371V8.43848C26.1979 8.43848 22.0274 12.609 22.0274 17.7535V31.4522C27.172 31.4522 31.3425 27.2817 31.3425 22.1371Z" fill="#2EC5CE"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2486_10358">
+                        <rect width="32" height="32" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="footer-links">
+                        <a href="#" class="footer-app-link">Download Now</a>
+                        <a href="#" class="footer-license-link">License</a>
+                    </div>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">About</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Features</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Pricing</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">News</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Help</a></li>
+                            <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <p class="copyrights">
+                        © 2021 Landify UI Kit. All rights reserved
+                    </p>
+                </div>
+                <div class="footer-apps">
+                    <h4 class="footer-apps-title">Get the App</h4>
+                    <div>
+                        <a href="#" class="google-play">
+                            <img src="./img/header/GooglePlay.png" alt="GooglePlay">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="app-store">
+                            <img src="./img/header/AppStore.png" alt="AppStore">
+                        </a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/server.js"></script>
+</body>
+</html>
